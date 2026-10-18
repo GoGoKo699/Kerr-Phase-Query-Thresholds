@@ -39,6 +39,14 @@ Start with [the physical model, resource conditions and exact claims](science/mo
 
 [The LLM reading guide](llms.txt) maps questions to these authoritative files.
 
+## Learn the project
+
+The shared learning route uses **John Watrous, _The Theory of Quantum Information_ (2018)** as its single educational anchor. Start with [the source bridge](learning/WATROUS_BRIDGE.md), which maps selected sections of the author manuscript to the project's notation, phase-estimation model and worked four-photon example. Follow the [30-milestone map](learning/MILESTONES.md) for the complete sequence.
+
+The map has **14 background milestones and 16 narrative and innovation milestones**. The first phase builds from states and measurements to the complete operational model, including the Fourier and arithmetic prerequisites. The second builds from the individual risk floors and constructive bands to the full threshold, confidence, resource and access story. Each phase moves from local ingredients to a global synthesis. The allocation reflects the project's two connected foundations: quantum estimation and arithmetic structure.
+
+Every milestone states a central question, an understanding target, earlier prerequisites, its role in the story, a conceptual connection and canonical reading pointers. The [primary research references](references/RELATED_WORK.md) remain the sources for the imported phase-estimation, number-theory and control results. The book supplies the common educational foundation; the scientific files supply the project's full arguments.
+
 ## A finite separation
 
 Four photons already give a strict separation from every three-use strategy under uniform phases. The code words
