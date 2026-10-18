@@ -137,7 +137,7 @@ No continuous outcome measurement is required. For a run of length $`L`$, choose
 =\sum_{j=0}^{L-1}e^{-ij\phi_m}|j\rangle,
 \qquad
 E_m=\frac1J|e_m\rangle\langle e_m|,
-\qquad 0\leq m<J.
+\qquad 0\leq m\lt J.
 \qquad\text{(M)}
 ```
 
@@ -440,7 +440,7 @@ are nonnegative integers of total $`s`$. Equation (P4) gives
 g=\frac{a^2-2a+r}{2}+4j.
 ```
 
-Thus each sufficiently large even total has a $`\Theta(s^2)`$-length band with frequency spacing four. The sine construction estimates $`\phi=4\theta\pmod{2\pi}`$ with pointwise risk $`O(s^{-4})`$. If $`\theta`$ is known to lie in a closed interval of width less than $`\pi/2`$, choose a phase cut outside its image under multiplication by four, with a fixed positive angular margin $`h`$. On the event $`d(\hat\phi,\phi)<h`$, lifting into this branch and dividing by four gives $`|\hat\theta-\theta|=d(\hat\phi,\phi)/4`$. The complementary event has probability at most $`R_\phi/[4\sin^2(h/2)]`$, which tends to zero. Since $`R_\phi\to0`$ and the target loss is bounded, four uses suffice for consistency for priors supported in such an interval. The five-use necessity retains its full-circle scope.
+Thus each sufficiently large even total has a $`\Theta(s^2)`$-length band with frequency spacing four. The sine construction estimates $`\phi=4\theta\pmod{2\pi}`$ with pointwise risk $`O(s^{-4})`$. If $`\theta`$ is known to lie in a closed interval of width less than $`\pi/2`$, choose a phase cut outside its image under multiplication by four, with a fixed positive angular margin $`h`$. On the event $`d(\hat\phi,\phi)\lt h`$, lifting into this branch and dividing by four gives $`|\hat\theta-\theta|=d(\hat\phi,\phi)/4`$. The complementary event has probability at most $`R_\phi/[4\sin^2(h/2)]`$, which tends to zero. Since $`R_\phi\to0`$ and the target loss is bounded, four uses suffice for consistency for priors supported in such an interval. The five-use necessity retains its full-circle scope.
 
 ## Global scope of the threshold
 

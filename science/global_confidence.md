@@ -55,7 +55,7 @@ For each fixed $`\alpha\in[0,2\pi/M)`$, the remaining hypotheses are the $`M`$ e
 
 ```math
 \theta_k=\alpha+\frac{2\pi k}{M},
-\qquad 0\leq k<M.
+\qquad 0\leq k\lt M.
 ```
 
 Let $`A_s`$ be the occupied residue set in block $`s`$ and group

@@ -350,7 +350,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** How does the residue method transfer to a quadratic collective-spin spectrum without importing the Kerr query threshold?
 
-**Target.** For a fixed absolutely continuous prior on the real coupling $`J`$, consider one uninterrupted evolution under $`H_N(J)=J\sum_{i<j}Z_iZ_j`$. Fixed known $`N`$ permits removal of the scalar term in $`2JS_z^2-JN/2`$. Even and odd particle-number subsequences give square and triangular spectra in phase coordinates $`2Jt`$ and $`4Jt`$. Each occupies only $`(p+1)/2`$ residues modulo an odd prime. CRT products and prior pushforward imply shrinking-window success tends to zero for every input and final POVM at fixed time and coupling convention.
+**Target.** For a fixed absolutely continuous prior on the real coupling $`J`$, consider one uninterrupted evolution under $`H_N(J)=J\sum_{i\lt j}Z_iZ_j`$. Fixed known $`N`$ permits removal of the scalar term in $`2JS_z^2-JN/2`$. Even and odd particle-number subsequences give square and triangular spectra in phase coordinates $`2Jt`$ and $`4Jt`$. Each occupies only $`(p+1)/2`$ residues modulo an odd prime. CRT products and prior pushforward imply shrinking-window success tends to zero for every input and final POVM at fixed time and coupling convention.
 
 **Prerequisites and story role.** [M20](#m20-cyclic-discrimination-from-occupied-residues), [M22](#m22-fixed-priors-heralding-and-confidence-at-the-threshold), [M26](#m26-duration-catalogs-and-changed-query-access). This tests the method on a second physical representation while retaining its own operational hypotheses.
 

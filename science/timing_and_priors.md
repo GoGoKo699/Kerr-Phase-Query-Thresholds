@@ -433,7 +433,7 @@ Every allowed three-use adaptive support is a subset of these histories. For a f
 ```math
 g\longmapsto
 Q=3g+\frac{3s-s^2}{2}
-=\frac12\sum_{i<j}(n_i-n_j)^2
+=\frac12\sum_{i\lt j}(n_i-n_j)^2
 ```
 
 is injective and gives a value of $`x^2-xy+y^2`$. To bound its range, let the smallest and largest occupations differ by $`r\leq N`$, and write the middle occupation as a distance $`y\in[0,r]`$ above the smallest. Then
@@ -489,7 +489,7 @@ For a bounded Kerr-prior density, insert its density bound into (N3). For any fi
 
 ### A corresponding risk lower bound
 
-For uniform $`\theta`$ and interval width $`0<w\leq2\pi`$, put
+For uniform $`\theta`$ and interval width $`0\lt w\leq2\pi`$, put
 
 ```math
 a=\frac{w}{2D_N}\leq\pi.
@@ -514,7 +514,7 @@ R\geq c\,\frac{w_N^2\log N}{N^4}.
 \qquad\text{(NR2)}
 ```
 
-The constant can be chosen uniformly over $`0<w_N\leq2\pi`$; the continuous function $`2[1-\mathrm{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
+The constant can be chosen uniformly over $`0\lt w_N\leq2\pi`$; the continuous function $`2[1-\mathrm{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
 
 Thus $`R=O(N^{-4})`$ requires (NW). For another fixed absolutely continuous Kerr prior, the same necessary width follows from the fixed-confidence argument: a risk bound $`O(N^{-4})`$ implies a nonzero fixed confidence in some fixed-constant $`N^{-2}`$ window by Markov's inequality. The exact formula (NR) itself is stated for the uniform Kerr prior.
 
