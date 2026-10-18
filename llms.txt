@@ -34,6 +34,12 @@ Canonical entrypoints:
 - references/RELATED_WORK.md: imported ingredients, exact source pointers,
   nearby models and actual limits of the literature comparison.
 - references/references.bib: structured source metadata.
+- learning/MILESTONES.md: the shared 30-milestone sequence, with 14 background
+  milestones and 16 narrative and innovation milestones; prerequisites,
+  understanding targets, conceptual connections and canonical pointers.
+- learning/WATROUS_BRIDGE.md: selected sections of Watrous's 2018 author
+  manuscript, notation conventions, finite-register and phase-estimation
+  connections, a complete four-photon example, and project-specific bridges.
 - verification/README.md: commands, dependencies, expected outputs and scope.
 - verification/run_all.py: reproducible finite-check runner.
 
@@ -44,10 +50,24 @@ Reader routes:
   together with its named resource conditions and cited ingredients.
 - For an implementation ingredient: read coherent preparation or the finite
   protocol, then its verification and explicit control assumptions.
+- For the shared learning route: use learning/MILESTONES.md and its source
+  bridge. M01-M14 assemble the background and complete operational model;
+  M15-M30 assemble the research arguments and their global synthesis.
+  Both phases proceed from local ingredients to the complete story.
 - To reproduce: use verification/README.md and run the current scripts;
   distinguish present execution from a historical report.
 
 Preserve these distinctions when explaining or editing:
+- Watrous's The Theory of Quantum Information is the single educational
+  anchor. Its section/page pointers refer to the standard-layout 2018
+  author manuscript. Primary research citations supply the separate
+  phase-estimation, arithmetic, algorithmic and control ingredients.
+- The learning map is project-defined and shared by all readers. Its
+  milestones point to the authoritative science; they do not replace proofs.
+- Watrous's trace distance is the unhalved trace norm, and its fidelity is
+  unsquared. State the convention when translating a measurement-error bound.
+- Finite-dimensional quantum-register results apply at each fixed cutoff.
+  POVM normalization on a code must be completed on the full physical space.
 - q counts all unknown-gate uses per complete estimate, including repeated
   probes and sensing attempts. Auxiliary preparation before any query has
   a separate control cost.

@@ -6,7 +6,17 @@ The general coset-identification theorem, covariant phase optimization, cyclic c
 
 The finite abelian machinery includes composite groups. The additional arithmetic in [the confidence proof](../science/global_confidence.md) uses exclusions modulo prime squares, followed by products of fixed coprime moduli. Finite-field polynomial examples do not evaluate these residue sets. Likewise, granting a power as one free query changes the model: implementing a positive integer power by repeated primitive calls consumes that many calls.
 
-Each heading is also a stable citation anchor and a key in [references.bib](references.bib). PDF page numbers below count the first PDF page as page 1, unless a printed journal page is specified. Numbered pointers refer to the explicitly identified version. Full linked preprints or official texts were inspected for the mathematical statements used here; exceptions and limits are identified individually. A verified publisher record does not imply that its final typeset text was available.
+Each source heading is also a stable citation anchor and a key in [references.bib](references.bib). PDF page numbers below count the first PDF page as page 1, unless printed pagination is explicitly specified. Numbered pointers refer to the explicitly identified version. Full linked preprints or official texts were inspected for the mathematical statements used here; exceptions and limits are identified individually. A verified publisher record does not imply that its final typeset text was available.
+
+## Educational anchor
+
+### watrous2018
+
+**John Watrous, _The Theory of Quantum Information_.** Cambridge University Press (2018). [Author source page](https://cs.uwaterloo.ca/~watrous/TQI/); [complete author manuscript](https://cs.uwaterloo.ca/~watrous/TQI/TQI.pdf); [DOI](https://doi.org/10.1017/9781316848142).
+
+**Inspected version and pointers:** The standard-layout author manuscript, with preface dated January 2018. Its **printed page numbers** are used in [the learning bridge](../learning/WATROUS_BRIDGE.md#source-map). Selected sections of Chapters 1–3 provide the common language of mathematical preliminaries, quantum registers, channels, measurements, discrimination and distance. Chapter 1 is a review, not a proof-complete introductory treatment. Chapter 7's invariant-measure material is optional context for the elementary circle average derived in the project.
+
+This is the single educational anchor for [the 30 milestones](../learning/MILESTONES.md). The project's phase-estimation reductions, Kerr arithmetic, preparation algorithms and physical-control assumptions retain their separate derivations and research attributions below. The author manuscript is linked for personal reading and is not redistributed here. The [published-edition errata](https://cs.uwaterloo.ca/~watrous/TQI/TQI.errata.pdf) does not certify that all manuscript typos have been corrected.
 
 ## Quantum queries, covariance and confidence
 
