@@ -1,0 +1,89 @@
+# Kerr Phase Query Thresholds
+
+This repository classifies the number of identical forward Kerr-gate uses
+needed for globally consistent calibration of the nonlinear phase. The
+complete scientific account is organized by topic under science/.
+
+Canonical entrypoints:
+- README.md: scientific question, threshold table, finite separation,
+  reading route, reproduction command, purpose and contact.
+- science/model.md: gate, target and nuisance, query count, peak occupation
+  versus total construction cap, error definitions, exact R1/R2/R3 and S1/S2/S3.
+- science/query_thresholds.md: adaptive history support and the phase-risk
+  lemma; exact Haar floors; three-triangular and fixed-total four-mode bands;
+  exact exposed-photon parity refinement.
+- science/global_confidence.md: cyclic residue bound, inert-prime omissions,
+  uniform shrinking-window converse, fixed joint absolutely continuous priors,
+  heralding, and achievable confidence at the threshold.
+- science/timing_and_priors.md: finite positive commensurate duration catalog;
+  qualitative iff criterion for an improving linear-phase prior; separate
+  sufficient and necessary confidence/RMS rates and their nonmatching gap.
+- science/coherent_preparation.md: sine state, reversible arithmetic,
+  fixed-point search without QRAM, work-register error bound, and the
+  separately assumed coherent number-to-Fock loading interface.
+- science/four_photon_protocol.md: four code words and amplitudes, selected
+  pair preparation, echoed middle edge, finite Fourier readout and exact risk.
+- science/robustness.md: independent cubic phase, converse simulation,
+  finite-witness tolerance and conservative asymptotic sufficient tolerance.
+- science/access_variants.md: one shortened Hamiltonian call and a
+  forward/inverse pair, with bypass photons and changed access assumptions.
+- science/ising_application.md: one fixed-time all-to-all Ising interrogation,
+  all-input converse, parity spectra, fixed real prior and scope.
+- science/interpretation.md: physical connections, local/global distinction,
+  common nuisance, resources and established boundaries.
+- references/RELATED_WORK.md: imported ingredients, exact source pointers,
+  nearby models and actual limits of the literature comparison.
+- references/references.bib: structured source metadata.
+- verification/README.md: commands, dependencies, expected outputs and scope.
+- verification/run_all.py: reproducible finite-check runner.
+
+Reader routes:
+- For the scientific story: model, query thresholds, global confidence,
+  interpretation; follow the relevant constructive or access page.
+- For an exact theorem: use the authoritative statement and full proof,
+  together with its named resource conditions and cited ingredients.
+- For an implementation ingredient: read coherent preparation or the finite
+  protocol, then its verification and explicit control assumptions.
+- To reproduce: use verification/README.md and run the current scripts;
+  distinguish present execution from a historical report.
+
+Preserve these distinctions when explaining or editing:
+- q counts all unknown-gate uses per complete estimate, including repeated
+  probes and sensing attempts. Auxiliary preparation before any query has
+  a separate control cost.
+- The same unknown beta acts on every call. Independent per-call Haar
+  linear phases define a different, theta-independent averaged channel.
+- Adaptive lower bounds allow arbitrary ancillas and controls under a
+  hard per-query occupation cap. Upper bounds use a stricter total photon
+  cap including the explicitly specified bypass reference.
+- A sequential history's sum n_j is cumulative linear exposure, not
+  automatically the initial photon count.
+- Constant exact risk floors and matching optimal risk exponents use Haar
+  priors. Achievable O(N^-4) risk is pointwise in both phases.
+- The subthreshold confidence theorem holds for every fixed joint AC prior,
+  even narrow or correlated densities; it does not cover singular or
+  N-dependent concentrating priors.
+- A constant N^-2 window gives a fixed-confidence guarantee. Confidence
+  tends to one for delta_N -> 0 with N^2 delta_N -> infinity.
+- The original four-use achievability chooses an odd exposed total at most
+  N. Exactly N exposed photons for every parity is a different promise.
+- The finite positive duration catalog and its clock step are fixed in N.
+  The exact four-use upper bound refers to the original primitive gate.
+- w_N -> 0 is the sharp qualitative three-use calibration criterion for a
+  fixed AC theta prior and an independent uniform beta interval of known
+  center. Quantitative sufficient and necessary rate bounds do not match.
+- Coherent arithmetic costs O(N polylog N), not polylog N. A separate Fock
+  loader and nonlinear calibrated physical controls are explicitly assumed.
+- Only known preparation/control unitaries are reversed in the four-use
+  algorithm. It never uses the inverse unknown gate.
+- Independent cubic phases preserve the converse; fixed unknown uncorrected
+  cubic error is not covered by the asymptotic upper bound. A theta-scaled
+  higher term changes the generator and invalidates that automatic transfer.
+- The Ising corollary uses fixed interacting N, unnormalized pair coupling,
+  one uninterrupted fixed t, arbitrary input and final readout. It does not
+  establish a Kerr-like four-query Ising threshold.
+- General covariant optimization, finite-group query theory, number-theory
+  representation/counting and fixed-point search are imported ingredients.
+  Do not describe them as new general theorems of this project.
+- Finite checks support their finite assertions. The general proofs and
+  their attributions supply the universal and asymptotic conclusions.
