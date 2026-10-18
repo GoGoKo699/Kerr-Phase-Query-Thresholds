@@ -1,0 +1,81 @@
+{
+  "inverse_cases": 6,
+  "inverse_pair": [
+    {
+      "cap": 9,
+      "logical_dimension": 5,
+      "risk": 0.267949192431
+    },
+    {
+      "cap": 25,
+      "logical_dimension": 13,
+      "risk": 0.050144175636
+    },
+    {
+      "cap": 101,
+      "logical_dimension": 51,
+      "risk": 0.003648891553
+    }
+  ],
+  "normalization_tolerance": 1e-11,
+  "risk_formula_tolerance": 1e-10,
+  "shortened_call": [
+    {
+      "cap": 9,
+      "duration_multiplier": 0.2222222222222222,
+      "logical_dimension": 7,
+      "risks": [
+        0.152240934977,
+        0.22249987946,
+        1.798172621429,
+        1.873766988005
+      ]
+    },
+    {
+      "cap": 25,
+      "duration_multiplier": 0.08,
+      "logical_dimension": 11,
+      "risks": [
+        0.068148347422,
+        0.077968638414,
+        0.531853673831,
+        0.94338117234
+      ]
+    },
+    {
+      "cap": 101,
+      "duration_multiplier": 0.019801980198019802,
+      "logical_dimension": 21,
+      "risks": [
+        0.020357116238,
+        0.021039466056,
+        0.094064228199,
+        0.247707645492
+      ]
+    },
+    {
+      "cap": 401,
+      "duration_multiplier": 0.004987531172069825,
+      "logical_dimension": 41,
+      "risks": [
+        0.005592405638,
+        0.005651714127,
+        0.020571250734,
+        0.061147787574
+      ]
+    },
+    {
+      "cap": 1601,
+      "duration_multiplier": 0.0012492192379762648,
+      "logical_dimension": 81,
+      "risks": [
+        0.001467637898,
+        0.001475189588,
+        0.004903971056,
+        0.014936628996
+      ]
+    }
+  ],
+  "shortened_cases": 20,
+  "status": "passed"
+}

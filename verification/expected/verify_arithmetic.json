@@ -1,0 +1,290 @@
+{
+  "exact_exposure_parity": [
+    {
+      "longest_run": 3,
+      "s": 6
+    },
+    {
+      "longest_run": 3,
+      "s": 10
+    },
+    {
+      "longest_run": 3,
+      "s": 14
+    },
+    {
+      "longest_run": 3,
+      "s": 18
+    },
+    {
+      "longest_run": 3,
+      "s": 22
+    },
+    {
+      "longest_run": 15,
+      "s": 24
+    },
+    {
+      "longest_run": 3,
+      "s": 26
+    },
+    {
+      "longest_run": 15,
+      "s": 28
+    },
+    {
+      "longest_run": 3,
+      "s": 30
+    },
+    {
+      "longest_run": 15,
+      "s": 32
+    },
+    {
+      "longest_run": 3,
+      "s": 34
+    },
+    {
+      "longest_run": 15,
+      "s": 36
+    },
+    {
+      "longest_run": 3,
+      "s": 38
+    }
+  ],
+  "known_phase_spectra": [
+    {
+      "cap": 2,
+      "longest_runs_q1_to_q3": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "cap": 3,
+      "longest_runs_q1_to_q3": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "cap": 4,
+      "longest_runs_q1_to_q3": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "cap": 5,
+      "longest_runs_q1_to_q3": [
+        2,
+        5,
+        5
+      ]
+    },
+    {
+      "cap": 6,
+      "longest_runs_q1_to_q3": [
+        2,
+        5,
+        5
+      ]
+    },
+    {
+      "cap": 10,
+      "longest_runs_q1_to_q3": [
+        2,
+        5,
+        19
+      ]
+    },
+    {
+      "cap": 20,
+      "longest_runs_q1_to_q3": [
+        2,
+        5,
+        86
+      ]
+    },
+    {
+      "cap": 40,
+      "longest_runs_q1_to_q3": [
+        2,
+        5,
+        365
+      ]
+    }
+  ],
+  "odd_sector_bands": [
+    {
+      "hi": 0,
+      "lo": 0,
+      "representatives": 1,
+      "s": 3
+    },
+    {
+      "hi": 9,
+      "lo": 6,
+      "representatives": 4,
+      "s": 9
+    },
+    {
+      "hi": 30,
+      "lo": 21,
+      "representatives": 10,
+      "s": 15
+    },
+    {
+      "hi": 91,
+      "lo": 66,
+      "representatives": 26,
+      "s": 25
+    },
+    {
+      "hi": 234,
+      "lo": 171,
+      "representatives": 64,
+      "s": 39
+    }
+  ],
+  "s24_consecutive_witness": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "status": "passed",
+  "unknown_phase_spectra": [
+    {
+      "cap": 4,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "cap": 7,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "cap": 9,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        10
+      ]
+    },
+    {
+      "cap": 15,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        20
+      ]
+    },
+    {
+      "cap": 25,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        65
+      ]
+    },
+    {
+      "cap": 39,
+      "longest_runs_q1_to_q4": [
+        1,
+        2,
+        3,
+        113
+      ]
+    }
+  ],
+  "weighted_duration_forms": [
+    {
+      "bound": 21,
+      "identity_cases": 343,
+      "modulus": 25,
+      "occupied_residues": 21,
+      "prime": 5,
+      "weights": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "bound": 43,
+      "identity_cases": 343,
+      "modulus": 49,
+      "occupied_residues": 43,
+      "prime": 7,
+      "weights": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "bound": 111,
+      "identity_cases": 343,
+      "modulus": 121,
+      "occupied_residues": 111,
+      "prime": 11,
+      "weights": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "bound": 157,
+      "identity_cases": 343,
+      "modulus": 169,
+      "occupied_residues": 157,
+      "prime": 13,
+      "weights": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "bound": 21,
+      "identity_cases": 343,
+      "modulus": 25,
+      "occupied_residues": 21,
+      "prime": 5,
+      "weights": [
+        3,
+        3,
+        6
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "amplitudes": [
+    0.3717480344601845,
+    0.6015009550075457,
+    0.6015009550075456,
+    0.37174803446018434
+  ],
+  "compiled_fourier_error": 2.8866471106272287e-16,
+  "compiled_fourier_leakage_norm": 6.505467371066026e-16,
+  "cubic_perturbation_checks": [
+    {
+      "formula": 0.3819660112501051,
+      "kappa": 0.0,
+      "maximum_error": 1.6653345369377348e-16
+    },
+    {
+      "formula": 0.40194014053589433,
+      "kappa": 0.3,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "formula": 0.5837980413850006,
+      "kappa": 0.99,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "formula": 0.6671282925132589,
+      "kappa": 1.2,
+      "maximum_error": 4.440892098500626e-16
+    }
+  ],
+  "cubic_threshold_radians": 0.9953090185559085,
+  "dimension": 35,
+  "echo_commutator_norm": 0.0,
+  "finite_arithmetic_oracle_checks": 107,
+  "finite_cubic_identity_checks": 976,
+  "fourier_eliminations": [
+    {
+      "angle": 0.7853981633974483,
+      "column": 0,
+      "edge": 2,
+      "phase": 0.0
+    },
+    {
+      "angle": 0.9553166181245092,
+      "column": 0,
+      "edge": 1,
+      "phase": 0.0
+    },
+    {
+      "angle": 1.0471975511965976,
+      "column": 0,
+      "edge": 0,
+      "phase": 0.0
+    },
+    {
+      "angle": 0.659058035826409,
+      "column": 1,
+      "edge": 2,
+      "phase": 1.1071487177940906
+    },
+    {
+      "angle": 0.9553166181245092,
+      "column": 1,
+      "edge": 1,
+      "phase": -5.034139534781332
+    },
+    {
+      "angle": 0.7853981633974483,
+      "column": 2,
+      "edge": 2,
+      "phase": -4.068887871591405
+    }
+  ],
+  "general_work_state_identity_error": 4.440892098500626e-16,
+  "logical_edge_checks": {
+    "0": {
+      "leakage_norm": 0.0,
+      "matrix_error": 0.0
+    },
+    "1": {
+      "leakage_norm": 4.131708798060142e-17,
+      "matrix_error": 1.1102230246251565e-16
+    },
+    "2": {
+      "leakage_norm": 4.0953458100192967e-17,
+      "matrix_error": 0.0
+    }
+  },
+  "logical_states": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      2,
+      0
+    ],
+    [
+      3,
+      1,
+      0,
+      0
+    ]
+  ],
+  "numpy_version": "2.3.5",
+  "pointwise_risks": [
+    {
+      "risk": 0.38196601125010515,
+      "theta": 0.0
+    },
+    {
+      "risk": 0.38196601125010493,
+      "theta": 0.1
+    },
+    {
+      "risk": 0.3819660112501051,
+      "theta": 0.4487989505128276
+    },
+    {
+      "risk": 0.38196601125010515,
+      "theta": 1.0
+    },
+    {
+      "risk": 0.38196601125010515,
+      "theta": 2.9
+    },
+    {
+      "risk": 0.38196601125010515,
+      "theta": 3.141592653589793
+    },
+    {
+      "risk": 0.38196601125010515,
+      "theta": 6.280185307179586
+    }
+  ],
+  "povm_resolution_error": 4.277968700420079e-16,
+  "preparation_amplitude_error": 1.1102230246251565e-16,
+  "preparation_leakage_norm": 6.678002095833975e-17,
+  "status": "All finite checks passed; analytical arguments establish general claims.",
+  "two_physical_grids_risk_error": 1.6653345369377348e-16
+}
