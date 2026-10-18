@@ -37,13 +37,13 @@ Assume a reversible number-to-Fock interface that retains the digital occupation
 O\!\left(N\log\frac{2}{\delta}\right)
 ```
 
-calls to an arithmetic predicate. Each predicate evaluation and each additional computational reflection costs $`\operatorname{polylog}N`$ elementary digital operations. Conditioned on successful preparation of the query-free index state, the implemented pointwise risk obeys
+calls to an arithmetic predicate. Each predicate evaluation and each additional computational reflection costs $`\mathrm{polylog}N`$ elementary digital operations. Conditioned on successful preparation of the query-free index state, the implemented pointwise risk obeys
 
 ```math
 R(\theta)\le R_K+16\delta^2.
 ```
 
-Consequently $`\delta=O(N^{-2})`$ gives $`O(N\operatorname{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
+Consequently $`\delta=O(N^{-2})`$ gives $`O(N\mathrm{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
 
 ## Preparing the sine amplitudes without a table
 
@@ -104,7 +104,7 @@ z^2=r,
 z\equiv1\pmod2.
 ```
 
-All integers have $`O(\log N)`$ bits. Fixed-length reversible circuits for squaring, signed subtraction, integer square root, comparison, and parity implement this predicate in $`\operatorname{polylog}N`$ elementary operations. Schoolbook arithmetic suffices; the square root can use a restoring algorithm with a number of iterations fixed by the register width. Compute the predicate into a flag and reverse its scratch computation. No data oracle is assumed.
+All integers have $`O(\log N)`$ bits. Fixed-length reversible circuits for squaring, signed subtraction, integer square root, comparison, and parity implement this predicate in $`\mathrm{polylog}N`$ elementary operations. Schoolbook arithmetic suffices; the square root can use a restoring algorithm with a number of iterations fixed by the register width. Compute the predicate into a flag and reverse its scratch computation. No data oracle is assumed.
 
 Legendre's three-square theorem guarantees at least one marked pair. Since $`Q_g=3\pmod8`$, it is not of the excluded form $`4^a(8b+7)`$. Every three-square representation has three odd coordinates, because the only way three quadratic residues modulo eight sum to three is $`1+1+1`$. Taking absolute values makes all coordinates positive. Each is at most $`\sqrt{Q_g}<s+1\le B`$, so the search range contains a marked pair. Thus its marked fraction satisfies
 
@@ -156,10 +156,10 @@ A finite choice can be made directly from their success polynomial. For odd sequ
 
 ```math
 w=1-T_{1/L}(1/\delta)^{-2}
- =\tanh^2\!\left(\frac{\operatorname{arcosh}(1/\delta)}{L}\right).
+ =\tanh^2\!\left(\frac{\mathrm{arcosh}(1/\delta)}{L}\right).
 ```
 
-Choosing an odd $`L\ge\sqrt M\,\operatorname{arcosh}(1/\delta)`$ ensures $`w\le1/M`$. The predicate query count is $`L-1`$.
+Choosing an odd $`L\ge\sqrt M\,\mathrm{arcosh}(1/\delta)`$ ensures $`w\le1/M`$. The predicate query count is $`L-1`$.
 
 Use the same phase schedule in every frequency block. The reflection about the uniform candidate state acts on the candidate registers and leaves the frequency index untouched. The arithmetic marking operation is controlled by that index. Thus the full search has the form
 
@@ -171,7 +171,7 @@ It does not reflect about or measure the full sine superposition. The method the
 
 Neither a canonical representation nor a common search phase is required. Within a frequency block, the marked component can be a superposition of all marked representations and can acquire a frequency-dependent phase. All marked representations receive the same unknown phase, and the later $`W_j^\dagger`$ reverses the known search.
 
-The schedule is computed from $`N`$ and $`\delta`$; its angles need not be stored as a frequency-dependent table. Reversible arithmetic uses $`O(\log N)`$-bit logical registers and at most $`\operatorname{polylog}N`$ scratch. No assumption about an efficient classical three-square algorithm, the extended Riemann hypothesis, or QRAM enters the construction.
+The schedule is computed from $`N`$ and $`\delta`$; its angles need not be stored as a frequency-dependent table. Reversible arithmetic uses $`O(\log N)`$-bit logical registers and at most $`\mathrm{polylog}N`$ scratch. No assumption about an efficient classical three-square algorithm, the extended Riemann hypothesis, or QRAM enters the construction.
 
 ## Encoding, four queries, and decoding
 
@@ -251,7 +251,7 @@ Discrete Fourier orthogonality selects only adjacent index differences when mult
 ```math
 \begin{aligned}
 R(\theta)
-&=2-2\operatorname{Re}
+&=2-2\mathrm{Re}
        \sum_{j=0}^{K-2}a_ja_{j+1}
        \langle\chi_{j+1}|\chi_j\rangle\\
 &=R_K+\sum_{j=0}^{K-2}a_ja_{j+1}
@@ -304,7 +304,7 @@ At the start of stage $`k`$, the branch with occupation label $`n_i`$ contains $
 
 on every active branch. All inactive branches remain dark. This induction proves coherent loading for an arbitrary superposition of digital labels. It avoids attempting to synchronize different $`\sqrt n`$ Rabi rates. The known phase accumulated by a branch can be included in the interface; its exact reverse cancels the phase after sensing.
 
-Four modes require at most $`4s`$ JC stages for loading and another $`4s`$ for unloading, with $`O(s)`$ conditional qutrit pulses and $`O(N\operatorname{polylog}N)`$ comparator logic. Peak sensing-mode occupation is at most $`s`$, and the final loaded occupation is exactly $`s`$. The loader injects photons during preparation; it does not conserve the four-cavity photon number at every intermediate preparation step. The [finite four-photon protocol](four_photon_protocol.md) has the stronger conservation property.
+Four modes require at most $`4s`$ JC stages for loading and another $`4s`$ for unloading, with $`O(s)`$ conditional qutrit pulses and $`O(N\mathrm{polylog}N)`$ comparator logic. Peak sensing-mode occupation is at most $`s`$, and the final loaded occupation is exactly $`s`$. The loader injects photons during preparation; it does not conserve the four-cavity photon number at every intermediate preparation step. The [finite four-photon protocol](four_photon_protocol.md) has the stronger conservation property.
 
 For fixed nonzero couplings and negligible pulse overhead, the ideal JC dwell time is proportional to
 

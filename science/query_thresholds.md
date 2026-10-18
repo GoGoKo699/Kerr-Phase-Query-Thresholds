@@ -109,7 +109,7 @@ The operator $`A`$ is a contraction. Indeed, Cauchy–Schwarz for the positive o
 
 ```math
 \mathbb E\cos(\hat\theta-\theta)
-=\operatorname{Re}\sum_{g,s}
+=\mathrm{Re}\sum_{g,s}
   \langle v_{g+1,s}|A|v_{g,s}\rangle
 \leq\sum_{g,s}\|v_{g+1,s}\|\,\|v_{g,s}\|.
 ```

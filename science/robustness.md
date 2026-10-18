@@ -128,7 +128,7 @@ h(\boldsymbol n)=\sum_i\binom{n_i}{3}
 
 reversibly from the retained occupation registers and apply $`e^{i\kappa h(\boldsymbol n)}`$ to those registers before unloading. The physical Fock state on that branch has precisely the same occupations, so this digital phase cancels $`e^{-i\kappa H_3}`$ on every branch, including a fallback. Reversing the arithmetic clears the helper register.
 
-The integer $`h`$ has $`O(\log N)`$ bits. Known bitwise phase rotations and reversible polynomial arithmetic therefore add only $`\operatorname{polylog}N`$ digital operations to the already assumed coherent interface. If compensation uses an estimate $`\kappa_0`$, the previous bounds apply to the residual $`\kappa-\kappa_0`$. The accuracy required of that estimate remains a separate calibration resource.
+The integer $`h`$ has $`O(\log N)`$ bits. Known bitwise phase rotations and reversible polynomial arithmetic therefore add only $`\mathrm{polylog}N`$ digital operations to the already assumed coherent interface. If compensation uses an estimate $`\kappa_0`$, the previous bounds apply to the residual $`\kappa-\kappa_0`$. The accuracy required of that estimate remains a separate calibration resource.
 
 ## Cubic structure at fixed total photon number
 

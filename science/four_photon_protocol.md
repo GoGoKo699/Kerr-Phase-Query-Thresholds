@@ -235,7 +235,7 @@ A fair classical bit chooses between the Fourier grids
 \phi_m=\frac{2\pi m}{K}+\frac\pi K.
 ```
 
-For each grid the normalized vectors $`|e_{\phi_m}\rangle/\sqrt K`$ form an orthonormal basis. The equally weighted union is exactly the displayed $`2K`$-outcome POVM. It can be realized by a phase offset $`Z(\alpha)=\operatorname{diag}(e^{ij\alpha})`$ before the same $`F_K`$ and ordinary basis measurement.
+For each grid the normalized vectors $`|e_{\phi_m}\rangle/\sqrt K`$ form an orthonormal basis. The equally weighted union is exactly the displayed $`2K`$-outcome POVM. It can be realized by a phase offset $`Z(\alpha)=\mathrm{diag}(e^{ij\alpha})`$ before the same $`F_K`$ and ordinary basis measurement.
 
 For $`K=4`$, choose $`\alpha=0`$ or $`\pi/4`$, apply the corresponding mode-1 SNAP and compiled $`F_4`$, measure the final Fock word, and report $`2\pi m/4+\alpha`$. This gives eight outcomes using one classical random bit.
 

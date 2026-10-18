@@ -58,7 +58,7 @@ Heralding does not turn the subthreshold model into a constant-yield accurate se
 
 ## What the explicit upper bound requires
 
-[Coherent preparation](coherent_preparation.md) replaces a large stored representative table with reversible arithmetic and fixed-point quantum search. The resulting digital cost is $`O(N\operatorname{polylog}N)`$, with logarithmic-size integer registers. The construction retains its work register and reverses only known controls after sensing. It does not require the inverse unknown gate.
+[Coherent preparation](coherent_preparation.md) replaces a large stored representative table with reversible arithmetic and fixed-point quantum search. The resulting digital cost is $`O(N\mathrm{polylog}N)`$, with logarithmic-size integer registers. The construction retains its work register and reverses only known controls after sensing. It does not require the inverse unknown gate.
 
 That digital construction has a separate interface to photonic Fock occupations. The specified loader makes its conditional-control assumptions and photon creation during preparation explicit. The four-photon example avoids the asymptotic search and gives concrete number-preserving selected pair gates, an echoed logical rotation, and finite Fourier readout. These are ideal control constructions. They do not supply measured fidelities or establish the performance of a complete laboratory implementation.
 

@@ -63,7 +63,7 @@ Adding a fixed finite set of positive commensurate durations does not remove the
 
 For three identical calls, a fixed absolutely continuous target-phase prior, and an independent linear phase uniform on a known-center interval of width $`w_N`$, consistency is possible exactly when $`w_N\to0`$. The proved quantitative sufficient and necessary bounds leave a rate gap. The sharp claim is the qualitative criterion for this prior family; no optimal interpolation is asserted.
 
-The four-use construction needs $`O(N\operatorname{polylog}N)`$ digital operations without QRAM, together with the stated coherent number-to-Fock interface. Preparation, readout and calibrated controls are additional resources. The [robustness bounds](science/robustness.md) distinguish persistence of the converse from tolerance of the four-use construction.
+The four-use construction needs $`O(N\mathrm{polylog}N)`$ digital operations without QRAM, together with the stated coherent number-to-Fock interface. Preparation, readout and calibrated controls are additional resources. The [robustness bounds](science/robustness.md) distinguish persistence of the converse from tolerance of the four-use construction.
 
 ## Reproduce the finite checks
 

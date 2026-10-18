@@ -128,7 +128,7 @@ If $`\theta`$ has a fixed absolutely continuous prior and $`\beta`$ is independe
 
 ### S2. Explicit preparation and a finite witness
 
-An unconditional coherent arithmetic search prepares the four-use frequency band with $`O(N\operatorname{polylog}N)`$ digital operations, assuming the separately specified coherent Fock-loading interface. This replaces a quadratic lookup table. A four-photon code has exact sine risk
+An unconditional coherent arithmetic search prepares the four-use frequency band with $`O(N\mathrm{polylog}N)`$ digital operations, assuming the separately specified coherent Fock-loading interface. This replaces a quadratic lookup table. A four-photon code has exact sine risk
 
 ```math
 R_4=\frac{3-\sqrt5}{2}

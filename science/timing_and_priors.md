@@ -205,7 +205,7 @@ Use the [finite padded Fourier POVM](query_thresholds.md#a-finite-readout-with-c
 
 ### Exact risk under the interval prior
 
-Write $`\Delta s_g=s_{g+1}-s_g`$ and define $`\operatorname{sinc}x=\sin x/x`$, with value one at zero. Fourier orthogonality leaves only adjacent frequencies in the first error harmonic. At a fixed $`b`$, the cosine score is
+Write $`\Delta s_g=s_{g+1}-s_g`$ and define $`\mathrm{sinc}x=\sin x/x`$, with value one at zero. Fourier orthogonality leaves only adjacent frequencies in the first error harmonic. At a fixed $`b`$, the cosine score is
 
 ```math
 \sum_{g=0}^{M-1}c_gc_{g+1}\cos(b\Delta s_g),
@@ -218,7 +218,7 @@ independent of $`\theta`$. Averaging $`b`$ uniformly gives the exact risk
 R(K,w)
 &=R_0(K)
  +2\sum_{g=0}^{M-1}c_gc_{g+1}
- \left[1-\operatorname{sinc}
+ \left[1-\mathrm{sinc}
  \left(\frac{w\Delta s_g}{2}\right)\right],\\
 R_0(K)
 &=2\left[1-\cos\frac{\pi}{M+2}\right].
@@ -229,7 +229,7 @@ R_0(K)
 The ideal risk obeys $`R_0(K)=O(K^{-4})`$. Since
 
 ```math
-1-\operatorname{sinc}x
+1-\mathrm{sinc}x
 =\int_0^1[1-\cos(tx)]\,dt
 \leq\frac{x^2}{6},
 ```
@@ -502,7 +502,7 @@ Equation (N3) implies $`\Pr\{d>x\}\geq1-x/a`$ for $`0\leq x\leq a`$, up to bound
 R
 &=\int_0^\pi2\sin x\,\Pr\{d>x\}\,dx\\
 &\geq2\int_0^a\sin x\left(1-\frac xa\right)\,dx\\
-&=2[1-\operatorname{sinc}a].
+&=2[1-\mathrm{sinc}a].
 \end{aligned}
 \tag{NR}
 ```
@@ -514,7 +514,7 @@ R\geq c\,\frac{w_N^2\log N}{N^4}.
 \tag{NR2}
 ```
 
-The constant can be chosen uniformly over $`0<w_N\leq2\pi`$; the continuous function $`2[1-\operatorname{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
+The constant can be chosen uniformly over $`0<w_N\leq2\pi`$; the continuous function $`2[1-\mathrm{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
 
 Thus $`R=O(N^{-4})`$ requires (NW). For another fixed absolutely continuous Kerr prior, the same necessary width follows from the fixed-confidence argument: a risk bound $`O(N^{-4})`$ implies a nonzero fixed confidence in some fixed-constant $`N^{-2}`$ window by Markov's inequality. The exact formula (NR) itself is stated for the uniform Kerr prior.
 
