@@ -29,7 +29,7 @@ Suppose a normalized state family admits a positive decomposition
 =\sum_{g\in S_s}e^{-ig\theta}|v_{g,s}\rangle,
 \qquad
 \sum_s\|\psi_{\theta,s}\|^2=1.
-\tag{C1}
+\qquad\text{(C1)}
 ```
 
 The Fourier vectors and different $`s`$ terms need not be orthogonal. Suppose that each $`S_s`$ occupies at most $`D`$ residue classes modulo a positive integer $`M`$. Then every measurement and estimator obeys
@@ -38,7 +38,7 @@ The Fourier vectors and different $`s`$ terms need not be orthogonal. Suppose th
 \Pr_{\theta\ {\rm uniform}}
 \left\{d(\hat\theta,\theta)<\frac{\pi}{M}\right\}
 \leq\frac{D}{M}.
-\tag{C2}
+\qquad\text{(C2)}
 ```
 
 Here $`d`$ is shortest angular distance. The strict window excludes the harmless nearest-neighbor tie at the boundary.
@@ -118,7 +118,7 @@ As in the [risk-floor proof](query_thresholds.md#one-to-three-uses-with-an-unkno
 =Q(u,v),
 \qquad
 Q(u,v)=u^2-uv+v^2
-\tag{E}
+\qquad\text{(E)}
 ```
 
 links each fixed-$`s`$ support to norms in the Eisenstein integers.
@@ -135,7 +135,7 @@ p\mid Q(u,v)
 p\mid u,\ p\mid v
 \quad\Longrightarrow\quad
 p^2\mid Q(u,v).
-\tag{V}
+\qquad\text{(V)}
 ```
 
 Therefore $`Q`$ cannot occupy any of the $`p-1`$ nonzero multiples of $`p`$ modulo $`p^2`$. Since $`p\ne3`$, the affine map from $`g`$ to the left hand side of (E) is invertible modulo $`p^2`$ for each fixed integer $`s`$. Each such frequency support occupies at most
@@ -157,7 +157,7 @@ D_{\mathcal P}=\prod_{p\in\mathcal P}(p^2-p+1),
 =\frac{D_{\mathcal P}}{M_{\mathcal P}}
 =\prod_{p\in\mathcal P}
 \left(1-\frac1p+\frac1{p^2}\right).
-\tag{CRT}
+\qquad\text{(CRT)}
 ```
 
 The Chinese remainder theorem bounds the number of permitted simultaneous residue classes by $`D_{\mathcal P}`$, uniformly in $`s`$. Applying (C2) gives, for every cap and every allowed protocol,
@@ -166,7 +166,7 @@ The Chinese remainder theorem bounds the number of permitted simultaneous residu
 \Pr_{\rm Haar}
 \left\{d<\frac{\pi}{M_{\mathcal P}}\right\}
 \leq\rho_{\mathcal P}.
-\tag{U}
+\qquad\text{(U)}
 ```
 
 The reciprocal sum of primes in the reduced progression $`2\bmod3`$ diverges. Hence $`\rho_{\mathcal P}\to0`$ as the finite set increases through those primes. These number-theoretic ingredients are standard; the [NIST references](../references/RELATED_WORK.md#dlmf27) provide the Chinese remainder theorem and reciprocal-prime progression asymptotics.
@@ -186,7 +186,7 @@ where the second supremum ranges over the adaptive class in [the model](model.md
 
 ```math
 \boxed{\lim_{\delta\downarrow0}F_3(\delta)=0.}
-\tag{SC}
+\qquad\text{(SC)}
 ```
 
 The modulus is chosen from the desired error tolerance, independently of the photon cap and independently of the protocol. This order of quantifiers is what rules out a sequence of increasingly energetic adaptive probes.
@@ -222,7 +222,7 @@ P_\pi^\Pi(\delta)
 &\leq C F_3(\delta)
   +\int_{\{w>C\}}w\,d\mu.
 \end{aligned}
-\tag{AC}
+\qquad\text{(AC)}
 ```
 
 For fixed $`C`$, the first term tends to zero by (SC). The second can be made arbitrarily small by increasing $`C`$, since $`w`$ is integrable. Consequently
@@ -234,7 +234,7 @@ For fixed $`C`$, the first term tends to zero by (SC). The second can be made ar
 \sup_{\Pi:\,q\leq3}
 P_\pi^\Pi(\delta)=0
 }
-\tag{J}
+\qquad\text{(J)}
 ```
 
 for every fixed absolutely continuous joint prior.
@@ -258,7 +258,7 @@ They satisfy the Gaussian norm identity
 ```math
 4g+1
 =(n_1+n_2-1)^2+(n_1-n_2)^2.
-\tag{G}
+\qquad\text{(G)}
 ```
 
 For every prime $`p\equiv3\pmod4`$, a sum of two squares divisible by $`p`$ has both coordinates divisible by $`p`$ and is therefore divisible by $`p^2`$. Indeed, a nonzero coordinate modulo $`p`$ would produce a square root of $`-1`$. The coefficient four in (G) is invertible modulo $`p^2`$, so each such prime again removes $`p-1`$ frequency residues.
@@ -270,7 +270,7 @@ Using products over primes $`3\bmod4`$ gives exactly the bound (CRT)–(U) for t
 \sup_{N\geq1}
 \sup_{\Pi:\,q\leq2}
 P_{\pi_\theta}^\Pi(\delta)=0.
-\tag{K}
+\qquad\text{(K)}
 ```
 
 The density-truncation proof is now one-dimensional. The [three-use triangular-band probe](query_thresholds.md#three-uses) gives the matching consistency activation at three uses, so the known-phase and unknown-common-phase thresholds are respectively three and four.
@@ -283,7 +283,7 @@ The three-use known-phase and four-use unknown-phase sine probes have finite mea
 \Pr\{d\geq\delta\}
 \leq\frac{R}{4\sin^2(\delta/2)}
 \leq\frac{C N^{-4}}{4\sin^2(\delta/2)}.
-\tag{A}
+\qquad\text{(A)}
 ```
 
 This is pointwise in the unknown phases and therefore holds under any prior. For each fixed failure tolerance $`\varepsilon>0`$, a sufficiently large constant $`C_\varepsilon`$ gives confidence at least $`1-\varepsilon`$ in a window of half-width $`C_\varepsilon N^{-2}`$ for large $`N`$. If

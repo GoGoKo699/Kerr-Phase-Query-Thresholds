@@ -43,7 +43,7 @@ calls to an arithmetic predicate. Each predicate evaluation and each additional 
 R(\theta)\le R_K+16\delta^2.
 ```
 
-Consequently $`\delta=O(N^{-2})`$ gives $`O(N\mathrm{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
+Choosing $`\delta=N^{-2}`$ gives $`O(N\mathrm{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
 
 ## Preparing the sine amplitudes without a table
 

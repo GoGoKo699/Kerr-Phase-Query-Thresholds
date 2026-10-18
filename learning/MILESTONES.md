@@ -278,7 +278,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** How can the four-use band be prepared coherently without storing a representative for every frequency?
 
-**Target.** Reversible arithmetic marks valid three-square representations in a search space of size $`O(N^2)`$. A uniform lower bound on the marked fraction permits one fixed-point amplification schedule to act coherently in every frequency block. The algorithm retains representation labels, assigns a fixed-total fallback to unmarked candidates, and reverses known preparation after four target calls. Sine amplitudes use query-free preparation. With a separately assumed Fock-loading interface, search amplitude error $`O(N^{-2})`$ retains $`O(N^{-4})`$ risk at $`O(N\mathrm{polylog}N)`$ digital cost without QRAM.
+**Target.** Reversible arithmetic marks valid three-square representations in a search space of size $`O(N^2)`$. A uniform lower bound on the marked fraction permits one fixed-point amplification schedule to act coherently in every frequency block. The algorithm retains representation labels, assigns a fixed-total fallback to unmarked candidates, and reverses known preparation after four target calls. Sine amplitudes use query-free preparation. With a separately assumed Fock-loading interface, choosing search amplitude tolerance $`\delta=N^{-2}`$ retains $`O(N^{-4})`$ risk at $`O(N\mathrm{polylog}N)`$ digital cost without QRAM.
 
 **Prerequisites and story role.** [M04](#m04-channels-ancillas-and-adaptive-controls), [M18](#m18-four-use-activation-in-an-odd-fixed-total-sector), [M22](#m22-fixed-priors-heralding-and-confidence-at-the-threshold). This turns the existence-based band into a specified algorithm with a distinct control-resource account.
 
@@ -302,7 +302,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** Why does requiring exactly an even exposed total change the four-use asymptotic conclusion?
 
-**Target.** For $`s=2a`$, the four-use spectrum satisfies $`2g+2a-a^2=u^2+v^2+w^2`$. If $`s\equiv2\pmod4`$, a missing class modulo four limits consecutive runs to three; if $`s\equiv0\pmod4`$, a missing class modulo sixteen limits them to fifteen. Explicit witnesses attain these lengths in the stated large-total ranges. A fifth call carrying one photon when needed leaves an odd total in the other four, restoring a guarantee for both exact-exposure parities.
+**Target.** For $`s=2a`$, the four-use spectrum satisfies $`2g+2a-a^2=u^2+v^2+w^2`$. If $`s\equiv2\pmod4`$, a missing class modulo four limits consecutive runs to three; if $`s\equiv0\pmod4`$, a missing class modulo sixteen limits them to fifteen. Explicit witnesses attain these lengths in the stated large-total ranges. These are Haar risk floors and give a full-circle minimax obstruction. A fifth call carrying one photon when needed leaves an odd total in the other four, restoring vanishing Haar risk and a full-circle minimax guarantee for both exact-exposure parities. A band with frequency spacing four explains why a sufficiently narrow target prior can still permit four-use consistency at even exact totals.
 
 **Prerequisites and story role.** [M17](#m17-unknown-common-phase-risk-floors), [M18](#m18-four-use-activation-in-an-odd-fixed-total-sector), [M19](#m19-the-four-photon-threshold-witness). This sharpens the resource promise without altering the headline theorem under an at-most photon cap.
 
