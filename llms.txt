@@ -87,6 +87,9 @@ Preserve these distinctions when explaining or editing:
   tends to one for delta_N -> 0 with N^2 delta_N -> infinity.
 - The original four-use achievability chooses an odd exposed total at most
   N. Exactly N exposed photons for every parity is a different promise.
+  Its five-use necessity concerns vanishing Haar risk / full-circle minimax
+  consistency. Four uses can be consistent at even exact totals on a known
+  target interval of width less than pi/2, using a band with spacing four.
 - The finite positive duration catalog and its clock step are fixed in N.
   The exact four-use upper bound refers to the original primitive gate.
 - w_N -> 0 is the sharp qualitative three-use calibration criterion for a

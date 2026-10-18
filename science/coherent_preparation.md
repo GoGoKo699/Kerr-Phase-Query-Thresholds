@@ -16,7 +16,7 @@ g_{\mathrm{hi}}=\left\lfloor\frac{s(s-3)}6\right\rfloor,
 D=g_{\mathrm{hi}}-g_{\mathrm{lo}}+1.
 ```
 
-The [four-use dense-band construction](query_thresholds.md#four-uses-with-an-unknown-common-linear-phase) gives every integer frequency in this interval at fixed total $`s`$. Choose $`K=2^m\le D`$ as the largest available power of two, and use $`g_j=g_{\mathrm{lo}}+j`$, $`0\le j<K`$. Taking $`s`$ as the largest odd integer at most $`N`$ gives $`K=\Theta(N^2)`$ as the cap grows.
+The [four-use dense-band construction](query_thresholds.md#four-uses-with-an-unknown-common-linear-phase) gives every integer frequency in this interval at fixed total $`s`$. Choose $`K=2^m\le D`$ as the largest available power of two, and use $`g_j=g_{\mathrm{lo}}+j`$, $`0\le j\lt K`$. Taking $`s`$ as the largest odd integer at most $`N`$ gives $`K=\Theta(N^2)`$ as the cap grows.
 
 The index amplitudes are
 
@@ -43,7 +43,7 @@ calls to an arithmetic predicate. Each predicate evaluation and each additional 
 R(\theta)\le R_K+16\delta^2.
 ```
 
-Consequently $`\delta=O(N^{-2})`$ gives $`O(N\mathrm{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
+Choosing $`\delta=N^{-2}`$ gives $`O(N\mathrm{polylog}N)`$ digital operations while retaining $`O(N^{-4})`$ risk. This is polynomial in the photon number $`N`$, not in the input length $`\log N`$. It does not include an unstated physical cost for the number-to-Fock interface.
 
 ## Preparing the sine amplitudes without a table
 
@@ -106,7 +106,7 @@ z\equiv1\pmod2.
 
 All integers have $`O(\log N)`$ bits. Fixed-length reversible circuits for squaring, signed subtraction, integer square root, comparison, and parity implement this predicate in $`\mathrm{polylog}N`$ elementary operations. Schoolbook arithmetic suffices; the square root can use a restoring algorithm with a number of iterations fixed by the register width. Compute the predicate into a flag and reverse its scratch computation. No data oracle is assumed.
 
-Legendre's three-square theorem guarantees at least one marked pair. Since $`Q_g=3\pmod8`$, it is not of the excluded form $`4^a(8b+7)`$. Every three-square representation has three odd coordinates, because the only way three quadratic residues modulo eight sum to three is $`1+1+1`$. Taking absolute values makes all coordinates positive. Each is at most $`\sqrt{Q_g}<s+1\le B`$, so the search range contains a marked pair. Thus its marked fraction satisfies
+Legendre's three-square theorem guarantees at least one marked pair. Since $`Q_g=3\pmod8`$, it is not of the excluded form $`4^a(8b+7)`$. Every three-square representation has three odd coordinates, because the only way three quadratic residues modulo eight sum to three is $`1+1+1`$. Taking absolute values makes all coordinates positive. Each is at most $`\sqrt{Q_g}\lt s+1\le B`$, so the search range contains a marked pair. Thus its marked fraction satisfies
 
 ```math
 \lambda_g\ge\frac1M

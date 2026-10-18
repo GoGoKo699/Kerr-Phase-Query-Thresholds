@@ -27,7 +27,7 @@ When the common linear phase is uniformly unknown, its average removes cross ter
 
 Four occupations leave a ternary form. On a suitable odd-$`s`$ sector, the required integer is congruent to three modulo eight, and the three-square theorem fills a quadratic-length interval. Thus a state with fixed total occupation cancels the common nuisance while retaining enough consecutive nonlinear frequencies. The change from three to four is a property of this form and its allowed sectors; it is not a general rule assigning one extra query to every nuisance parameter.
 
-The exact-photon parity refinement in [query thresholds](query_thresholds.md) also matters conceptually. Four-use achievability under a cap chooses a suitable odd exposed total. Requiring exactly $`N`$ photons to be exposed for every parity is a stronger resource promise with a different uniform query threshold.
+The exact-photon parity refinement in [query thresholds](query_thresholds.md) also matters conceptually. Four-use achievability under a cap chooses a suitable odd exposed total. Requiring exactly $`N`$ photons to be exposed for every parity gives a five-use threshold for vanishing Haar risk and a full-circle minimax guarantee. Four uses can still be consistent at even exact totals when the target phase is confined to a known interval narrower than $`\pi/2`$.
 
 ## A resource comparison
 

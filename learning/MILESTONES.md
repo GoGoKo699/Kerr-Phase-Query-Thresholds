@@ -278,7 +278,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** How can the four-use band be prepared coherently without storing a representative for every frequency?
 
-**Target.** Reversible arithmetic marks valid three-square representations in a search space of size $`O(N^2)`$. A uniform lower bound on the marked fraction permits one fixed-point amplification schedule to act coherently in every frequency block. The algorithm retains representation labels, assigns a fixed-total fallback to unmarked candidates, and reverses known preparation after four target calls. Sine amplitudes use query-free preparation. With a separately assumed Fock-loading interface, search amplitude error $`O(N^{-2})`$ retains $`O(N^{-4})`$ risk at $`O(N\mathrm{polylog}N)`$ digital cost without QRAM.
+**Target.** Reversible arithmetic marks valid three-square representations in a search space of size $`O(N^2)`$. A uniform lower bound on the marked fraction permits one fixed-point amplification schedule to act coherently in every frequency block. The algorithm retains representation labels, assigns a fixed-total fallback to unmarked candidates, and reverses known preparation after four target calls. Sine amplitudes use query-free preparation. With a separately assumed Fock-loading interface, choosing search amplitude tolerance $`\delta=N^{-2}`$ retains $`O(N^{-4})`$ risk at $`O(N\mathrm{polylog}N)`$ digital cost without QRAM.
 
 **Prerequisites and story role.** [M04](#m04-channels-ancillas-and-adaptive-controls), [M18](#m18-four-use-activation-in-an-odd-fixed-total-sector), [M22](#m22-fixed-priors-heralding-and-confidence-at-the-threshold). This turns the existence-based band into a specified algorithm with a distinct control-resource account.
 
@@ -302,7 +302,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** Why does requiring exactly an even exposed total change the four-use asymptotic conclusion?
 
-**Target.** For $`s=2a`$, the four-use spectrum satisfies $`2g+2a-a^2=u^2+v^2+w^2`$. If $`s\equiv2\pmod4`$, a missing class modulo four limits consecutive runs to three; if $`s\equiv0\pmod4`$, a missing class modulo sixteen limits them to fifteen. Explicit witnesses attain these lengths in the stated large-total ranges. A fifth call carrying one photon when needed leaves an odd total in the other four, restoring a guarantee for both exact-exposure parities.
+**Target.** For $`s=2a`$, the four-use spectrum satisfies $`2g+2a-a^2=u^2+v^2+w^2`$. If $`s\equiv2\pmod4`$, a missing class modulo four limits consecutive runs to three; if $`s\equiv0\pmod4`$, a missing class modulo sixteen limits them to fifteen. Explicit witnesses attain these lengths in the stated large-total ranges. These are Haar risk floors and give a full-circle minimax obstruction. A fifth call carrying one photon when needed leaves an odd total in the other four, restoring vanishing Haar risk and a full-circle minimax guarantee for both exact-exposure parities. A band with frequency spacing four explains why a sufficiently narrow target prior can still permit four-use consistency at even exact totals.
 
 **Prerequisites and story role.** [M17](#m17-unknown-common-phase-risk-floors), [M18](#m18-four-use-activation-in-an-odd-fixed-total-sector), [M19](#m19-the-four-photon-threshold-witness). This sharpens the resource promise without altering the headline theorem under an at-most photon cap.
 
@@ -350,7 +350,7 @@ The educational anchor is John Watrous's *The Theory of Quantum Information*, us
 
 **Question.** How does the residue method transfer to a quadratic collective-spin spectrum without importing the Kerr query threshold?
 
-**Target.** For a fixed absolutely continuous prior on the real coupling $`J`$, consider one uninterrupted evolution under $`H_N(J)=J\sum_{i<j}Z_iZ_j`$. Fixed known $`N`$ permits removal of the scalar term in $`2JS_z^2-JN/2`$. Even and odd particle-number subsequences give square and triangular spectra in phase coordinates $`2Jt`$ and $`4Jt`$. Each occupies only $`(p+1)/2`$ residues modulo an odd prime. CRT products and prior pushforward imply shrinking-window success tends to zero for every input and final POVM at fixed time and coupling convention.
+**Target.** For a fixed absolutely continuous prior on the real coupling $`J`$, consider one uninterrupted evolution under $`H_N(J)=J\sum_{i\lt j}Z_iZ_j`$. Fixed known $`N`$ permits removal of the scalar term in $`2JS_z^2-JN/2`$. Even and odd particle-number subsequences give square and triangular spectra in phase coordinates $`2Jt`$ and $`4Jt`$. Each occupies only $`(p+1)/2`$ residues modulo an odd prime. CRT products and prior pushforward imply shrinking-window success tends to zero for every input and final POVM at fixed time and coupling convention.
 
 **Prerequisites and story role.** [M20](#m20-cyclic-discrimination-from-occupied-residues), [M22](#m22-fixed-priors-heralding-and-confidence-at-the-threshold), [M26](#m26-duration-catalogs-and-changed-query-access). This tests the method on a second physical representation while retaining its own operational hypotheses.
 

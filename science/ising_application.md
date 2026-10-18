@@ -7,7 +7,7 @@ The cyclic-frequency obstruction also applies to a spin system with a quadratic 
 Fix a known register of $`N`$ spins and the Hamiltonian
 
 ```math
-H_N(J)=J\sum_{1\le i<j\le N}Z_iZ_j.
+H_N(J)=J\sum_{1\le i\lt j\le N}Z_iZ_j.
 ```
 
 The pair coupling $`J`$ has a fixed absolutely continuous prior on the real line. Prepare any $`J`$-independent input, possibly entangled with arbitrary parameter-independent ancillas, apply one uninterrupted evolution for a fixed time $`t>0`$, and perform any final joint POVM. The time and the definition of the pair coupling do not vary with $`N`$.
@@ -19,7 +19,7 @@ The pair coupling $`J`$ has a fixed absolutely continuous prior on the real line
 With $`S_z=\frac12\sum_i Z_i`$,
 
 ```math
-\sum_{i<j}Z_iZ_j=2S_z^2-\frac N2 I.
+\sum_{i\lt j}Z_iZ_j=2S_z^2-\frac N2 I.
 ```
 
 For fixed known $`N`$, the identity term contributes only a global phase and may be dropped. The remaining frequencies depend on the parity of $`N`$.

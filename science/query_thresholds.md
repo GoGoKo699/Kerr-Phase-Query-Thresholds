@@ -65,7 +65,7 @@ Collect histories with the same two integer frequencies. The final purified stat
 =\sum_{g,s}e^{-ig\theta-is\beta}|v_{g,s}\rangle,
 \qquad
 g=\sum_{j=1}^qT(n_j),\quad s=\sum_{j=1}^qn_j.
-\tag{F}
+\qquad\text{(F)}
 ```
 
 All feedback and control choices are contained in the coefficient vectors $`v_{g,s}`$. These vectors need not be orthogonal. A hard occupation cap makes the expansion finite; the energy independent conclusions are uniform over all finite caps. For a known $`\beta`$, combine the coefficients into vectors $`v_g`$ after inserting its known value.
@@ -78,14 +78,14 @@ When $`\beta`$ is uniform, averaging it gives
 \qquad
 |\psi_{\theta,s}\rangle
 =\sum_g e^{-ig\theta}|v_{g,s}\rangle.
-\tag{B}
+\qquad\text{(B)}
 ```
 
 Equation (B) is a positive sum, not an assertion that the vectors belonging to different $`s`$ are physically orthogonal. Its trace is one for every $`\theta`$. Averaging the normalization over both phases also gives the Parseval identity
 
 ```math
 \sum_{g,s}\|v_{g,s}\|^2=1.
-\tag{P}
+\qquad\text{(P)}
 ```
 
 The same argument with just $`\theta`$ gives $`\sum_g\|v_g\|^2=1`$ in the known-linear-phase problem. The argument includes classical adaptive protocols through purification and arbitrary joint measurements through their final POVM. It assumes the controls themselves do not encode extra parameter information.
@@ -96,7 +96,7 @@ For an integer frequency set $`S`$, let $`L(S)`$ be the largest number of intege
 
 ```math
 R\geq 2\left[1-\cos\frac{\pi}{L+1}\right].
-\tag{L}
+\qquad\text{(L)}
 ```
 
 To prove this without assuming orthogonal Fourier vectors, let $`E(d\phi)`$ be the final estimate POVM and set
@@ -123,7 +123,7 @@ For an arbitrary adaptive circuit, (L) is a lower bound derived from its support
 =\sqrt{\frac{2}{L+1}}
   \sum_{j=0}^{L-1}
   \sin\frac{(j+1)\pi}{L+1}\,|j\rangle .
-\tag{S}
+\qquad\text{(S)}
 ```
 
 The finite readout below attains equality. All claimed exact floors use explicit representatives, so they establish attainability as well as a converse. This qualification prevents an arbitrary collection of adaptive history frequencies from being mistaken for a freely preparable spectral basis.
@@ -137,8 +137,8 @@ No continuous outcome measurement is required. For a run of length $`L`$, choose
 =\sum_{j=0}^{L-1}e^{-ij\phi_m}|j\rangle,
 \qquad
 E_m=\frac1J|e_m\rangle\langle e_m|,
-\qquad 0\leq m<J.
-\tag{M}
+\qquad 0\leq m\lt J.
+\qquad\text{(M)}
 ```
 
 Fourier orthogonality gives $`\sum_mE_m=I`$. For a state with real amplitudes $`c_j`$ and phase $`e^{-ij\theta}`$, the cosine score is
@@ -193,7 +193,7 @@ Gauss's three-triangular-number theorem states that every nonnegative integer is
 
 ```math
 s^2\leq3\sum_jn_j^2=6g+3s.
-\tag{T}
+\qquad\text{(T)}
 ```
 
 Define
@@ -213,7 +213,7 @@ Choose one occupation triple $`\mathbf n(g)`$ for each $`g`$ and write $`s_g=\su
   \sin\frac{(g+1)\pi}{M_N+2}
   |\mathbf n(g)\rangle_{\rm sense}
   |N-s_g\rangle_{\rm bypass}.
-\tag{K3}
+\qquad\text{(K3)}
 ```
 
 Every component has exactly $`N`$ photons across the sensing and bypass modes. The bypass photons are part of the resource count. Distinct $`g`$ label orthogonal Fock states.
@@ -225,7 +225,7 @@ For a parallel total photon cap, all frequencies lie between zero and $`C_N=T(N)
 \leq R^*_{3,N}
 \leq
 2\left[1-\cos\frac{\pi}{M_N+2}\right].
-\tag{K3R}
+\qquad\text{(K3R)}
 ```
 
 Both sides are of order $`N^{-4}`$. For the broader adaptive class with occupation at most $`N`$ at each of three queries, replace $`C_N`$ by $`3T(N)`$ in the lower bound. The same parallel probe still supplies the upper bound, so the exponent is unchanged.
@@ -250,7 +250,7 @@ For three uses, set $`u=n_1-n_3`$, $`v=n_2-n_3`$. Direct expansion gives the Eis
 ```math
 3g+\frac{3s-s^2}{2}
 =u^2-uv+v^2.
-\tag{E}
+\qquad\text{(E)}
 ```
 
 The left hand shift is an integer. Modulo four, the form on the right takes only the values zero, one, and three: both coordinates even give zero, while every other parity pattern gives an odd value. Since three is invertible modulo four, every fixed-$`s`$ frequency set misses one residue class modulo four. Its longest run is at most three.
@@ -273,7 +273,7 @@ Define the endpoints
 g_{\rm lo}=\frac{s^2-4s+3}{8},
 \qquad
 g_{\rm hi}=\left\lfloor\frac{s(s-3)}6\right\rfloor.
-\tag{I}
+\qquad\text{(I)}
 ```
 
 For every integer $`g`$ in this interval, put
@@ -303,7 +303,7 @@ n_2&=(s+x-y-z)/4,\\
 n_3&=(s-x+y-z)/4,\\
 n_4&=(s-x-y+z)/4.
 \end{aligned}
-\tag{H}
+\qquad\text{(H)}
 ```
 
 The first numerator is divisible by four by construction. The others differ from it by twice a sum of two odd integers, so they too are divisible by four. Moreover,
@@ -336,7 +336,7 @@ For sufficiently large odd $`s`$, the interval is nonempty and has length propor
 ```math
 R=2\left[1-\cos\frac{\pi}{L_s+1}\right]
 =O(N^{-4}).
-\tag{K4}
+\qquad\text{(K4)}
 ```
 
 The nuisance contributes the same phase $`e^{-is\beta}`$ to every component and is therefore irrelevant to this measurement. No bypass reference is needed; an unused fixed bypass occupation can be included if exactly $`N`$ initial photons are desired.
@@ -363,7 +363,7 @@ Then $`x^2+y^2+z^2=8g+4s-s^2`$. If $`s=2a`$, the three coordinates are even. Wri
 
 ```math
 2g+2a-a^2=u^2+v^2+w^2.
-\tag{P4}
+\qquad\text{(P4)}
 ```
 
 If $`s\equiv2\pmod4`$, then $`a`$ is odd. Three squares cannot sum to seven modulo eight, so (P4) removes one class of $`g`$ modulo four and forces longest run at most three. At $`s=6`$, the occupations
@@ -415,10 +415,35 @@ R^*=2\left[1-\cos\frac{\pi}{16}\right]
 
 for every $`s\geq24`$ divisible by four. This finite witness does not claim that 24 is the smallest possible exposed total with a 15-frequency run.
 
-If exactly $`N`$ exposed photons are required for both budget parities, five uses suffice asymptotically. Put one photon through a fifth use when $`N`$ is even, and vacuum through it when $`N`$ is odd; the remaining four modes then have odd total. Since $`T(0)=T(1)=0`$, the fifth use adds no Kerr frequency. Four uses fail along even exact exposed totals, so five is the smallest fixed query count that gives a guarantee for both parities under that exact-exposure constraint. The primary four-use theorem with a photon cap is unaffected.
+If exactly $`N`$ exposed photons are required for both budget parities, five uses suffice asymptotically. Put one photon through a fifth use when $`N`$ is even, and vacuum through it when $`N`$ is odd; the remaining four modes then have odd total. Since $`T(0)=T(1)=0`$, the fifth use adds no Kerr frequency. The even-total Haar floors above make five the smallest fixed query count for vanishing Haar risk, or equivalently here a full-circle minimax consistency guarantee, for both exact-exposure parities. The primary four-use theorem with a photon cap is unaffected.
+
+A restricted target-phase prior can change this exact-exposure conclusion. For even $`s=2a`$, set $`r=2`$ when $`a`$ is even and $`r=3`$ when $`a`$ is odd. Every integer
+
+```math
+Q=r+8j\le\frac{a^2}{3},\qquad j\in\mathbb Z_{\ge0},
+```
+
+avoids the exclusions in the [three-square criterion](../references/RELATED_WORK.md#sun2007), so write $`Q=u^2+v^2+w^2`$. Since $`u+v+w\equiv Q\equiv a\pmod2`$ and $`|u|+|v|+|w|\le\sqrt{3Q}\le a`$, the occupations
+
+```math
+\left(
+\frac{a+u+v+w}{2},
+\frac{a+u-v-w}{2},
+\frac{a-u+v-w}{2},
+\frac{a-u-v+w}{2}
+\right)
+```
+
+are nonnegative integers of total $`s`$. Equation (P4) gives
+
+```math
+g=\frac{a^2-2a+r}{2}+4j.
+```
+
+Thus each sufficiently large even total has a $`\Theta(s^2)`$-length band with frequency spacing four. The sine construction estimates $`\phi=4\theta\pmod{2\pi}`$ with pointwise risk $`O(s^{-4})`$. If $`\theta`$ is known to lie in a closed interval of width less than $`\pi/2`$, choose a phase cut outside its image under multiplication by four, with a fixed positive angular margin $`h`$. On the event $`d(\hat\phi,\phi)\lt h`$, lifting into this branch and dividing by four gives $`|\hat\theta-\theta|=d(\hat\phi,\phi)/4`$. The complementary event has probability at most $`R_\phi/[4\sin^2(h/2)]`$, which tends to zero. Since $`R_\phi\to0`$ and the target loss is bounded, four uses suffice for consistency for priors supported in such an interval. The five-use necessity retains its full-circle scope.
 
 ## Global scope of the threshold
 
 The finite padded readout makes the attaining risks constant in the unknown phases. Thus the exact small-query Haar values also equal the corresponding minimax values, and the constructive rates hold for every phase pair.
 
-The converse is stronger than a nonzero sine-loss floor. The [global confidence theorem](global_confidence.md) shows that below the relevant activation threshold, success in any shrinking angular window tends to zero uniformly over all finite photon budgets and all allowed protocols. It also removes the need for a full uniform prior: every fixed absolutely continuous prior has the same qualitative obstruction. [Timing and prior calibration](timing_and_priors.md) specifies which additional access and shrinking-prior assumptions preserve or escape that conclusion.
+For the primary thresholds under a photon cap, the converse is stronger than a nonzero sine-loss floor. The [global confidence theorem](global_confidence.md) applies to two or fewer uses with known linear phase and three or fewer with unknown common linear phase. In those cases, success in any shrinking angular window tends to zero uniformly over all finite photon budgets and all allowed protocols. It also removes the need for a full uniform prior: every fixed absolutely continuous prior has the same qualitative obstruction. [Timing and prior calibration](timing_and_priors.md) specifies which additional access and shrinking-prior assumptions preserve or escape that conclusion.

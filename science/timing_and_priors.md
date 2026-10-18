@@ -21,7 +21,7 @@ Let $`\mathcal A`$ be a nonempty finite set of positive integers, fixed independ
 ```math
 U_a(\theta,\beta)
 =\exp[-ia\theta T(\hat n)-ia\beta\hat n].
-\tag{D}
+\qquad\text{(D)}
 ```
 
 This also describes a fixed finite catalog of positive rational durations after choosing a common time unit. Both Hamiltonian coefficients scale with duration. The physical coefficients and their prior must be specified before such a rescaling: an opaque gate whose phases are only given modulo $`2\pi`$ does not, by itself, define its fractional powers.
@@ -52,7 +52,7 @@ Expanding the weighted variance gives
 &=a(b+c)u^2-2abuv+b(a+c)v^2\\
 &=:Q_{a,b,c}(u,v).
 \end{aligned}
-\tag{W}
+\qquad\text{(W)}
 ```
 
 This positive definite binary quadratic form has matrix determinant
@@ -67,7 +67,7 @@ Let $`p`$ be an odd prime not dividing $`2D_{a,b,c}`$ such that
 
 ```math
 \left(\frac{-D_{a,b,c}}p\right)=-1.
-\tag{I}
+\qquad\text{(I)}
 ```
 
 Here the parentheses denote a Legendre symbol. Over an odd finite field, a nondegenerate binary quadratic form has a nonzero zero exactly when its discriminant is a square; completing the square proves this criterion. Condition (I) therefore implies
@@ -88,7 +88,7 @@ There are at most $`|\mathcal A|^3`$ ordered three-use schedules. Let $`D_*`$ be
 
 ```math
 p\equiv-1\pmod{4D_*}
-\tag{AP}
+\qquad\text{(AP)}
 ```
 
 satisfies (I) for every schedule.
@@ -135,7 +135,7 @@ The [cyclic residue bound](global_confidence.md#a-cyclic-residue-bound) therefor
 ```math
 \Pr_{\rm Haar}\{d<\pi/M\}
 \leq\min\!\left\{1,\ |\mathcal A|^3\rho_{\mathcal P}\right\}.
-\tag{CU}
+\qquad\text{(CU)}
 ```
 
 The catalog size is a fixed constant and $`\rho_{\mathcal P}\to0`$. This proves the uniform shrinking-window converse. The [density-truncation argument](global_confidence.md#every-fixed-absolutely-continuous-joint-prior) transfers it to every fixed joint absolutely continuous prior.
@@ -149,7 +149,7 @@ For a two-use schedule $`(a,b)`$, the relevant identity is
 ```math
 8g+a+b
 =a(2n_1-1)^2+b(2n_2-1)^2.
-\tag{KW}
+\qquad\text{(KW)}
 ```
 
 The binary form on the right has determinant $`ab`$. Choose a common multiple of these determinants over all schedules and use the same progression construction. At every selected prime, divisibility by $`p`$ forces divisibility by $`p^2`$, and the coefficient eight is invertible. Each schedule omits $`p-1`$ frequency residues modulo $`p^2`$. A union over at most $`|\mathcal A|^2`$ schedules, followed by the cyclic lemma and one-dimensional density truncation, proves the known-phase assertion.
@@ -198,7 +198,7 @@ The sensing and bypass modes contain exactly $`K`$ photons in every component. T
 ```math
 |\psi_{\theta,b}\rangle
 =\sum_{g=0}^{M}c_g e^{-ig\theta-is_gb}|g\rangle.
-\tag{PC}
+\qquad\text{(PC)}
 ```
 
 Use the [finite padded Fourier POVM](query_thresholds.md#a-finite-readout-with-constant-pointwise-risk) with any $`J\geq M+2`$ outcomes. It can equivalently be implemented by two offset Fourier grids. This construction uses ideal permitted preparation and readout on the specified representatives; the present argument does not assign a gate count to the three-triangular preparation interface.
@@ -223,7 +223,7 @@ R(K,w)
 R_0(K)
 &=2\left[1-\cos\frac{\pi}{M+2}\right].
 \end{aligned}
-\tag{SR}
+\qquad\text{(SR)}
 ```
 
 The ideal risk obeys $`R_0(K)=O(K^{-4})`$. Since
@@ -241,7 +241,7 @@ R(K,w)
 \leq R_0(K)
  +\frac{w^2}{12}\sum_{g=0}^{M-1}c_gc_{g+1}(\Delta s_g)^2
 \leq C K^{-4}+\frac{w^2K^2}{12}.
-\tag{RB}
+\qquad\text{(RB)}
 ```
 
 The final step uses $`\sum_gc_gc_{g+1}=\cos[\pi/(M+2)]\leq1`$.
@@ -259,7 +259,7 @@ R=O(N^{-4}+w_N^{4/3}),
 \qquad
 \sqrt{\mathbb E d^2}
 =O(N^{-2}+w_N^{2/3}).
-\tag{RM}
+\qquad\text{(RM)}
 ```
 
 In particular, $`w_N=O(N^{-3})`$ suffices for wrapped RMS error $`O(N^{-2})`$. Any width sequence tending to zero suffices for consistency. The effective budget $`K`$ is a design choice balancing this construction's two errors; it is not a necessary limit on usable photons in every protocol.
@@ -294,7 +294,7 @@ The centered interval has $`\mathbb E b=0`$ and $`\mathbb E b^2=w^2/12`$. Averag
 
 ```math
 \|\rho_w-\rho_0\|_1\leq\frac{w^2K^2}{24}.
-\tag{TD}
+\qquad\text{(TD)}
 ```
 
 Any measurement event changes in probability by at most half this trace norm. The bound is uniform in $`\theta`$, since its encoding commutes with $`S`$. Combining (TD) with the ideal risk tail bound gives, for $`0<\delta\leq\pi`$,
@@ -309,7 +309,7 @@ Any measurement event changes in probability by at most half this trace norm. Th
 1-\frac{C}{K^4\delta^2}
  -\frac{w^2K^2}{48}.
 \end{aligned}
-\tag{CB}
+\qquad\text{(CB)}
 ```
 
 Fix a failure target $`0<\varepsilon<1`$. Choose
@@ -324,7 +324,7 @@ with $`c_\varepsilon`$ small enough that the last term in (CB) is at most $`\var
 \Pr_w\{d<\delta\}\geq1-\varepsilon,
 \qquad
 \delta=O_\varepsilon\!\left(\max\{N^{-2},w_N^2\}\right).
-\tag{FC}
+\qquad\text{(FC)}
 ```
 
 For width $`w_N\leq B/N`$, a constant fraction of the available photons suffices, with that fraction depending on $`B`$ and $`\varepsilon`$. Therefore $`w_N=O(N^{-1})`$ suffices for every fixed high-confidence target at an appropriate constant times $`N^{-2}`$.
@@ -355,7 +355,7 @@ For the independent uniform-interval nuisance family just specified and a fixed 
 \quad\Longleftrightarrow\quad
 w_N\longrightarrow0.
 }
-\tag{IFF}
+\qquad\text{(IFF)}
 ```
 
 The forward construction follows from (RM).
@@ -397,7 +397,7 @@ let $`D=\max_s|S_s|`$. For every estimator,
 \Pr_{\rm Haar}\{d<\delta\}
 \leq\min\{1,D\delta/\pi\},
 \qquad 0<\delta\leq\pi.
-\tag{N1}
+\qquad\text{(N1)}
 ```
 
 For a POVM element $`E(d\phi)`$, Cauchy–Schwarz gives
@@ -433,7 +433,7 @@ Every allowed three-use adaptive support is a subset of these histories. For a f
 ```math
 g\longmapsto
 Q=3g+\frac{3s-s^2}{2}
-=\frac12\sum_{i<j}(n_i-n_j)^2
+=\frac12\sum_{i\lt j}(n_i-n_j)^2
 ```
 
 is injective and gives a value of $`x^2-xy+y^2`$. To bound its range, let the smallest and largest occupations differ by $`r\leq N`$, and write the middle occupation as a distance $`y\in[0,r]`$ above the smallest. Then
@@ -457,7 +457,7 @@ The injective map and the possible value zero imply
 ```math
 D_N\leq1+B_Q(N^2)
 =O\!\left(\frac{N^2}{\sqrt{\log N}}\right).
-\tag{N2}
+\qquad\text{(N2)}
 ```
 
 Additional constraints on $`s`$ or on realizable adaptive histories can only reduce this set.
@@ -473,7 +473,7 @@ For uniform $`\theta`$ and a uniform nuisance interval of width $`w>0`$, the joi
 &\leq
 \min\!\left\{1,\frac{C\delta N^2}{w\sqrt{\log N}}\right\}.
 \end{aligned}
-\tag{N3}
+\qquad\text{(N3)}
 ```
 
 No block decomposition under the interval prior is assumed; (N3) compares the actual experiment to its Haar average.
@@ -482,14 +482,14 @@ At a fixed constant resolution $`\delta=cN^{-2}`$, if $`w_N\sqrt{\log N}\to\inft
 
 ```math
 w_N=O((\log N)^{-1/2}).
-\tag{NW}
+\qquad\text{(NW)}
 ```
 
 For a bounded Kerr-prior density, insert its density bound into (N3). For any fixed absolutely continuous density and a claimed success level $`\eta>0`$, truncate at a fixed cutoff whose tail mass is below $`\eta/2`$. The bounded part must then supply at least $`\eta/2`$ success. This gives the same necessary rate (NW), with constants depending on the prior, the confidence level, and the fixed resolution coefficient.
 
 ### A corresponding risk lower bound
 
-For uniform $`\theta`$ and interval width $`0<w\leq2\pi`$, put
+For uniform $`\theta`$ and interval width $`0\lt w\leq2\pi`$, put
 
 ```math
 a=\frac{w}{2D_N}\leq\pi.
@@ -504,17 +504,17 @@ R
 &\geq2\int_0^a\sin x\left(1-\frac xa\right)\,dx\\
 &=2[1-\mathrm{sinc}a].
 \end{aligned}
-\tag{NR}
+\qquad\text{(NR)}
 ```
 
 For small $`a`$ this is $`a^2/3+O(a^4)`$. Using (N2) gives, for sufficiently large $`N`$,
 
 ```math
 R\geq c\,\frac{w_N^2\log N}{N^4}.
-\tag{NR2}
+\qquad\text{(NR2)}
 ```
 
-The constant can be chosen uniformly over $`0<w_N\leq2\pi`$; the continuous function $`2[1-\mathrm{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
+The constant can be chosen uniformly over $`0\lt w_N\leq2\pi`$; the continuous function $`2[1-\mathrm{sinc}a]/a^2`$ has a positive minimum on $`[0,\pi]`$ after its removable singularity is filled.
 
 Thus $`R=O(N^{-4})`$ requires (NW). For another fixed absolutely continuous Kerr prior, the same necessary width follows from the fixed-confidence argument: a risk bound $`O(N^{-4})`$ implies a nonzero fixed confidence in some fixed-constant $`N^{-2}`$ window by Markov's inequality. The exact formula (NR) itself is stated for the uniform Kerr prior.
 
